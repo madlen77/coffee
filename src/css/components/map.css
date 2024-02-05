@@ -1,0 +1,16 @@
+.map-text{
+    font-size: var(--fs-600);
+    margin: 0 auto 35px 6.94%;
+    font-weight: var(--h-font-weight);
+}
+
+.map{
+    width: 100%;
+    height: 45vh;
+    margin: 0;
+}
+
+.map-div {
+    padding: 0;
+    margin: 0;
+}

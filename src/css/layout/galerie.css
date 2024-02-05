@@ -1,0 +1,48 @@
+.galerie-container{
+    display: grid;
+    gap: 10px 10px;
+    
+    grid-template-columns: repeat(auto-fit, 155px);
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.tall {
+    grid-column: span 2;
+}
+
+.galerie-container > div > img {
+    vertical-align: middle;
+    display: inline-block;
+    object-fit: cover;
+
+}
+
+.galerie-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-block, .info-container-cafe, .galerie-container, .info-container-plant {
+    margin: auto 24px;
+}
+
+.line {
+    border: 0.5px solid var(--white);
+    border-width: 1px 0 0 0;
+    width: 75%;
+
+}
+
+.hero-herkunft-seite{
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  ),
+  url("/images/beans-hand-2.png"), lightgray 50%;;
+  height: 56.3vh;
+  background-size: cover;
+  background-position: center;
+}

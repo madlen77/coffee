@@ -1,0 +1,15 @@
+.button-dunkel {
+  width: fit-content;
+  margin: auto;
+  padding: 15px 50px;
+  border-radius: 5px;
+  background-color: var(--anthrazit);
+  font-size: var(--fs-400);
+}
+
+.desktop {
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+  }
+}

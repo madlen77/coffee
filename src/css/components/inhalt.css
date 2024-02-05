@@ -1,0 +1,83 @@
+.inhalt {
+    padding: 60px 22px 72px 20px;
+
+    h2{
+        text-align: center;
+        margin: 0 43px 45px 35px;
+        font-size: var(--fs-600);
+
+    }    
+}
+
+.inhalt-container{
+    display: flex;
+    justify-content: space-between;
+    div {      
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        p{
+            max-width: 9ch;
+            text-align: center;
+        }
+    }
+    @media(min-width:992px){
+        flex-direction: column;
+        div{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: fit-content;
+            p{
+                max-width:60ch;
+                display: inline;
+            }
+        }
+    }
+}
+
+.inhalt-box{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    @media(min-width: 992px){
+    padding-right: 18.06%;
+    padding-left: 18.06%;
+        flex-direction: row;
+        align-items: space-between;
+        justify-content: flex-start;
+    div {      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        p{
+            padding-left: 15px;
+            max-width: 9ch;
+            text-align: left;
+        }
+        }
+    }
+}
+
+.inhalt-kaffee {
+    align-self: center;
+    width:57.07%;
+
+    @media(min-width: 992px){
+        width: 27.92%;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+}
+
+.inhalt-tasse, .inhalt-schaufel {
+    width: 45px;
+    align-self: center;
+}
+
+.inhalt-pflanze {
+    width: 43.5px;
+    align-self: center;
+}
