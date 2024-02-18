@@ -10,6 +10,7 @@
 }
 
 .inhalt-container{
+    width:57.07%;
     display: flex;
     justify-content: space-between;
     div {      
@@ -41,6 +42,7 @@
     flex-direction: column;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     @media(min-width: 992px){
     padding-right: 18.06%;
     padding-left: 18.06%;

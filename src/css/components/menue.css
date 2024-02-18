@@ -1,3 +1,15 @@
 .main{
-    background-color: var(--anthrazit);
+    background-color: black;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px
+}
+
+.menue-items {
+    position: absolute;
+    top: 30%;
+    left: 20%;
 }

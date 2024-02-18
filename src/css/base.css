@@ -55,3 +55,7 @@ a {
   line-height: var(--p-line-height);
 }
 
+video {
+  max-width: 100%;
+}
+

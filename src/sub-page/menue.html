@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>menue</title>
+    <title>Index Page</title>
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
   </head>
   <body class="main">
     <main>
-      <a href="/index.html"><img src="/image/Burger Menu close.svg" alt=""></a>
-      <p>das Café</p>
-      <p>Herkunft</p>
-      <p>Shop</p>
-      {{header}}
+        <a  href="/index.html"
+          ><img class="close" src="/images/Burger Menu close.svg" alt=""
+        /></a>
+      <div class="menue-items">
+        <a href="/sub-page/cafe.html"><h3>das Café</h3></a>
+        <a href="/sub-page/herkunft.html"><h3>Herkunft</h3></a>
+        <a href="/sub-page/shop.html"><h3>Shop</h3></a>
+      </div>
     </main>
     <script src="/js/index.js" type="module"></script>
   </body>

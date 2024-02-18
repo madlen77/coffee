@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe</title>
     <link rel="stylesheet" href="/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
       <div class="hero-cafe">
-        {{navigation}}
+        {{>navigation}}
       </div>
       <div class="info-container-cafe">
         <div>
@@ -45,12 +44,14 @@
           zurückkehren.
         </p>
       </div>
+      <div class="testing">
+        
       <div class="galerie-container">
         <div>
           <img src="/images/danish-1.png" alt="" />
         </div>
-        <div>
-          <img class="tall" src="/images/latte-art-2.png" alt="" />
+        <div class="tall">
+          <img  src="/images/latte-art-2.png" alt="" />
         </div>
         <div>
           <img src="/images/coffee-machine.png" alt="" />
@@ -58,18 +59,19 @@
         <div>
           <img src="/images/breakfast-1.png" alt="" />
         </div>
-        <div>
-          <img class="tall" src="/images/coffee-latte-art.png" alt="" />
+        <div class="tall">
+          <img  src="/images/coffee-latte-art.png" alt="" />
         </div>
-        <div>
-          <img class="tall" src="/images/list.png" alt="" />
+        <div class="tall">
+          <img  src="/images/list.png" alt="" />
         </div>
-        <div>
-          <img class="tall" src="/images/sign.png" alt="" />
+        <div class="tall">
+          <img  src="/images/sign.png" alt="" />
         </div>
         <div>
           <img src="/images/latte-art-3.png" alt="" />
         </div>
+      </div>
       </div>
       {{>map}}
     </main>

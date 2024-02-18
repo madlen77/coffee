@@ -1,0 +1,17 @@
+.text-block,
+.info-container-cafe,
+.galerie-container,
+.info-container-plant {
+  margin: auto 24px 40px;
+}
+
+@media (min-width: 992px) {
+  .info-container-cafe {
+    display: flex;
+  }
+  .text-block {
+    display: flex;
+    justify-content: center;
+    
+  }
+}

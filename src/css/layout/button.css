@@ -1,10 +1,30 @@
-.button-dunkel {
+.button-dunkel, .button-hell:hover {
   width: fit-content;
   margin: auto;
   padding: 15px 50px;
+  border: none;
   border-radius: 5px;
   background-color: var(--anthrazit);
   font-size: var(--fs-400);
+}
+
+.button-hell {
+  width: fit-content;
+  margin: auto;
+  padding: 15px 50px;
+  border: 3px solid white;
+  border-radius: 5px;
+  border-radius: 5px;
+  background-color: var(--anthrazit);
+  font-size: 0.875rem;
+}
+
+.button-dunkel:hover {
+  background-color: var(--dark-grey);
+}
+
+.button-dunkel:active, .button-hell:active{
+  background-color: var(--beige);
 }
 
 .desktop {
