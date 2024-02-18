@@ -25,14 +25,15 @@
 
 .info-coffee {
     display: block;
-    width:64.32%;
+    width:73.71%;
     margin-left: auto;
     margin-top: 2.5rem;
 }
 
 .info-plant {
-    width: 61.6%;
+    width: 73.71%;
 }
+
 
 .info-ort, .info-zeit {
     display: inline-block;
@@ -56,9 +57,21 @@
         padding: 124px  0 125px ;
     }
 
+    .info-plant-text{
+        padding-top: 50px;
+    }
+
     .info-container-plant {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 77%;
+        padding-left: 5%;
+
+        p{
+            max-width: 40ch;
+        }
+        
     }
 
     .info-text {
@@ -67,25 +80,16 @@
 
     .info-coffee {
         margin: auto;
+        margin-right: 0;
         width:607px;
-    }
-/*
-.info-coffee {
-        width: 37.938rem;
-}*/
-    .info-plant {
-        width:612px;
-    }
-    /*
-.info-plant {
-        width: 37.938rem;
-        margin-right: 7.625rem;
-}*/
-    .info-mehr {
-        display: block;
+        align-self: flex-end;
     }
 
     .info-plant {
-        justify-self: flex-end;
+        width:612px;
+    }
+
+    .info-mehr {
+        display: block;
     }
 }

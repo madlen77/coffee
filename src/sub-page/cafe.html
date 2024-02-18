@@ -5,33 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe</title>
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <div class="hero-cafe">
-        {{>navigation}}
-      </div>
-      <div class="info-container-cafe">
-        <div>
-          <h2>Rösterei und Café</h2>
-          <p class="info-text">
-            Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen
-            Rösterei, serviert im gemütlichen Café in der Innenstadt.
-          </p>
-          <p class="info-ort">Komm vorbei!<br />Fraunhoferstr. 13, Kiel</p>
-          <p class="info-zeit">Mo – Fr 8–18 Uhr<br />Sa 11–18 Uhr</p>
+      <div class="hero-cafe">{{>navigation}}</div>
+      <div class="center">
+        <div class="info-container-cafe">
+          <div>
+            <h2>Rösterei und Café</h2>
+            <p class="info-text">
+              Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen
+              Rösterei, serviert im gemütlichen Café in der Innenstadt.
+            </p>
+            <p class="info-ort">Komm vorbei!<br />Fraunhoferstr. 13, Kiel</p>
+            <p class="info-zeit">Mo – Fr 8–18 Uhr<br />Sa 11–18 Uhr</p>
+          </div>
+          <img
+            class="info-coffee"
+            src="/images/coffee-mashine-2.png"
+            alt="das Innere eines Cafes"
+          />
         </div>
-        <img
-          class="info-coffee"
-          src="/images/coffee-mashine-2.png"
-          alt="das Innere eines Cafes"
-        />
       </div>
-      <div class="text-block">
-        <h2>Frisches Gebäck von nebenan</h2>
+      <div class="center">
+         <div class="text-block">
+        <h2>Frisches Gebäck<br>von nebenan</h2>
         <p>
           Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es
           einen letzten Blick zurück auf die Skyline seiner Heimatstadt
@@ -44,34 +48,35 @@
           zurückkehren.
         </p>
       </div>
-      <div class="testing">
-        
-      <div class="galerie-container">
-        <div>
-          <img src="/images/danish-1.png" alt="" />
-        </div>
-        <div class="tall">
-          <img  src="/images/latte-art-2.png" alt="" />
-        </div>
-        <div>
-          <img src="/images/coffee-machine.png" alt="" />
-        </div>
-        <div>
-          <img src="/images/breakfast-1.png" alt="" />
-        </div>
-        <div class="tall">
-          <img  src="/images/coffee-latte-art.png" alt="" />
-        </div>
-        <div class="tall">
-          <img  src="/images/list.png" alt="" />
-        </div>
-        <div class="tall">
-          <img  src="/images/sign.png" alt="" />
-        </div>
-        <div>
-          <img src="/images/latte-art-3.png" alt="" />
-        </div>
       </div>
+     
+      <div class="testing">
+        <div class="galerie-container">
+          <div>
+            <img src="/images/danish-1.png" alt="" />
+          </div>
+          <div class="tall">
+            <img src="/images/latte-art-2.png" alt="" />
+          </div>
+          <div>
+            <img src="/images/coffee-machine.png" alt="" />
+          </div>
+          <div>
+            <img src="/images/breakfast-1.png" alt="" />
+          </div>
+          <div class="tall">
+            <img src="/images/coffee-latte-art.png" alt="" />
+          </div>
+          <div class="tall">
+            <img src="/images/list.png" alt="" />
+          </div>
+          <div class="tall">
+            <img src="/images/sign.png" alt="" />
+          </div>
+          <div>
+            <img src="/images/latte-art-3.png" alt="" />
+          </div>
+        </div>
       </div>
       {{>map}}
     </main>

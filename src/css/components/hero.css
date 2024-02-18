@@ -23,7 +23,7 @@
   line-height: 1.1;
   font-weight: var(--h-font-weight);
   @media (min-width: 992px) {
-    margin-top: 18.061674008811vh;
+    margin-top: calc(30.368vh - 105.6px);
   }
 }
 
@@ -48,7 +48,7 @@
   height: 56.3vh;
   background-size: cover;
   background-position: center;
-  margin-bottom: 20vh;
+  margin-bottom: 120px;
 }
 
 .hero-cafe {
@@ -61,5 +61,5 @@
   height: 56.3vh;
   background-size: cover;
   background-position: center;
-  margin-bottom: 20vh;
+  margin-bottom: 120px;
 }

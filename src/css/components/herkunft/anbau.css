@@ -1,0 +1,21 @@
+.anbau{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.anbau img{
+    margin: 95px 0 0 50px;    
+}
+
+.anbau-text{
+    max-width: 60%;
+    width: 50%;
+    p {
+        display: inline-block;
+        margin-top: 1.25rem;
+    }
+    h2{
+        margin: auto;
+    }
+}

@@ -1,17 +1,42 @@
 .text-block,
-.info-container-cafe,
-.galerie-container,
 .info-container-plant {
   margin: auto 24px 40px;
+}
+
+.text-block{
+  display: flex;
+  flex-direction: column;
+
+  h2{
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  p {
+     max-width: 55ch;
+     font-size: 1.125rem;
+  }
 }
 
 @media (min-width: 992px) {
   .info-container-cafe {
     display: flex;
+    max-width: 100%;
+    width: 95vh;
+    padding-bottom: 120px;
   }
   .text-block {
     display: flex;
     justify-content: center;
     
+    p {
+      max-width: 60ch;
+   }
   }
 }
+
+.center{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+} 

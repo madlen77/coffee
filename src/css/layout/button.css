@@ -1,4 +1,4 @@
-.button-dunkel, .button-hell:hover {
+.button-dunkel {
   width: fit-content;
   margin: auto;
   padding: 15px 50px;
@@ -15,17 +15,34 @@
   border: 3px solid white;
   border-radius: 5px;
   border-radius: 5px;
-  background-color: var(--anthrazit);
+  background: linear-gradient(to left, var(--anthrazit) 50%, var(--dark-grey) 50%) right;
+  /* background-size: 200% 100%; */
+  /* background-color: var(--anthrazit); */
+  background-size: 300% 100%;
   font-size: 0.875rem;
+  transition: background 2s ease-out;
+}
+
+.button-hell:hover{
+  background-position: left;
+  /* background-color: var(--dark-grey); */
 }
 
 .button-dunkel:hover {
   background-color: var(--dark-grey);
 }
 
-.button-dunkel:active, .button-hell:active{
+/* .button-hell span{
   background-color: var(--beige);
-}
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  top: 0;
+} */
+
+.button-dunkel:active, .button-hell:active span{
+  width: 1;
+} 
 
 .desktop {
   display: none;

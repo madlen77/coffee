@@ -10,7 +10,9 @@
 }
 
 .inhalt-container{
-    width:57.07%;
+    /* width:57.07%; */
+    width:90%;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
     div {      
@@ -25,10 +27,13 @@
         }
     }
     @media(min-width:992px){
+        max-width: 550px;
         flex-direction: column;
         div{
             flex-direction: row;
+            height: 402px;
             flex-wrap: nowrap;
+            height: 100%;
             height: fit-content;
             p{
                 max-width:60ch;
@@ -66,9 +71,9 @@
 .inhalt-kaffee {
     align-self: center;
     width:57.07%;
-
+    max-width: 460px;
     @media(min-width: 992px){
-        width: 27.92%;
+        width: 33.75%;
         grid-row: 1 / 2;
         grid-column: 1 / 2;
     }
