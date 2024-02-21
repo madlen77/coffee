@@ -11,7 +11,7 @@
   --medium-grey: #737373;
   --light-grey: #E9E9E9;
   --white-filter: invert(100%) sepia(12%) saturate(0%) hue-rotate(344deg) brightness(115%) contrast(100%);
-
+  --black-filter: brightness(0) saturate(100%);
 
 
   /* Text Styles */

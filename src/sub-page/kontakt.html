@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe</title>
+    <title>Kontakt</title>
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,25 +14,46 @@
   </head>
 <body>
     <header>
-        {{>navigation}}
+        {{>navigation_dunkel}}
     </header>
     <main>
-        <h2>Du hast Fragen? Schreib uns gern!</h2>
+        <h2 class="abstand">Du hast Fragen? Schreib uns gern!</h2>
         <form action="">
+        <div class="input abstand">
             <label for="name">Name*</label>
-            <input type="text" placeholder="Name">
+            <input id="input-name" type="text" placeholder="Name">
+        </div>
+        <div class="input abstand">
             <label for="E-Mail">E-Mail*</label>
             <input type="text" placeholder="E-Mail">
+        </div>
+        <div class="input abstand">
             <label for="Telefonnummer">Telefonnummer</label>
-            <input type="text" placeholder="Telefonnummer">
-            <select id="cars" name="cars">
-                <option disabled selected >Dein Betreff</option>
-                <option value="lieferung">Fragen zur Lieferung</option>
-                <option value="produkt">Fragen zum Produkt</option>
-                <option value="vertrieb">Vertriebsfragen</option>
-                <option value="einfach">einfach nur so!</option>
+            <input id="input-telefonnummer" type="text" placeholder="Telefonnummer">
+        </div>
+            <select class="betreff abstand" name="cars">
+                <option disabled selected hidden>Dein Betreff</option>
+                <option class="betreff-inhalt" value="lieferung">Fragen zur Lieferung</option>
+                <option class="betreff-inhalt" value="produkt">Fragen zum Produkt</option>
+                <option class="betreff-inhalt" value="vertrieb">Vertriebsfragen</option>
+                <option class="betreff-inhalt" value="einfach">einfach nur so!</option>
               </select>
         </form>
+
+    <div class="abstand">
+        <label for="nachricht">Deine Nachricht</label>
+        <input type="text" placeholder="Was hast du am Herzen?">
+    </div>
+    <div class="abstand">
+        <input type="checkbox">
+        <label for="datenschutz">Ich akzeptiere die Datenschutzerkärung</label>
+    </div>
+    <div class="center">
+    <button class="button-dunkel">abschicken</button>
+    </div>
     </main>
+    <footer>
+        {{>footer}}
+    </footer>
 </body>
 </html>

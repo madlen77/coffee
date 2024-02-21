@@ -43,3 +43,8 @@
   padding: 0;
   margin: 0;
 } 
+
+.abstand {
+  margin-left: 23px;
+  margin-right: 23px;
+}
