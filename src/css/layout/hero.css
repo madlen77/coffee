@@ -15,17 +15,12 @@
   display: none;
   @media (min-width: 992px) {
     display: flex;
-    /* margin-left:50vw; */
   }
 }
 
 .hero-logo {
   filter: var(--white-filter);
   height: 35px;
-
-  @media (min-width: 992px) {
-    /* margin-left: ; */
-  }
 }
 
 .hero-menu {

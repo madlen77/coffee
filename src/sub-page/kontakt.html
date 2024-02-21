@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<body>
+    <header>
+        {{>navigation}}
+    </header>
+    <main>
+        <h2>Du hast Fragen? Schreib uns gern!</h2>
+        <form action="">
+            <label for="name">Name*</label>
+            <input type="text" placeholder="Name">
+            <label for="E-Mail">E-Mail*</label>
+            <input type="text" placeholder="E-Mail">
+            <label for="Telefonnummer">Telefonnummer</label>
+            <input type="text" placeholder="Telefonnummer">
+            <select id="cars" name="cars">
+                <option disabled selected >Dein Betreff</option>
+                <option value="lieferung">Fragen zur Lieferung</option>
+                <option value="produkt">Fragen zum Produkt</option>
+                <option value="vertrieb">Vertriebsfragen</option>
+                <option value="einfach">einfach nur so!</option>
+              </select>
+        </form>
+    </main>
+</body>
+</html>

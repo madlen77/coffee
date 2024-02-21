@@ -1,21 +1,31 @@
-.anbau{
+.anbau {
+  @media (min-width: 992px) {
     display: flex;
     justify-content: space-between;
     margin: 50px;
+  }
 }
 
-.anbau img{
-    margin: 95px 0 0 50px;    
+.anbau img {
+  display: block;
+  width: 73.71%;
+  margin-left: auto;
+  margin-top: 2.5rem;
+  @media (min-width: 992px) {
+    margin: 95px 0 0 50px;
+  }
 }
 
-.anbau-text{
+.anbau-text {
+  @media (min-width: 992px) {
     max-width: 60%;
     width: 50%;
     p {
-        display: inline-block;
-        margin-top: 1.25rem;
+      display: inline-block;
+      margin-top: 1.25rem;
     }
-    h2{
-        margin: auto;
+    h2 {
+      margin: auto;
     }
+  }
 }
