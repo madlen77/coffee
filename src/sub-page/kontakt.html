@@ -11,49 +11,86 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
       rel="stylesheet"
     />
+    <script src="../js/index.js" defer></script>
+    <script src="../js/kontakt.js" defer></script>
   </head>
-<body>
-    <header>
-        {{>navigation_dunkel}}
-    </header>
-    <main>
-        <h2 class="abstand">Du hast Fragen? Schreib uns gern!</h2>
-        <form action="">
-        <div class="input abstand">
-            <label for="name">Name*</label>
-            <input id="input-name" type="text" placeholder="Name">
-        </div>
-        <div class="input abstand">
-            <label for="E-Mail">E-Mail*</label>
-            <input type="text" placeholder="E-Mail">
-        </div>
-        <div class="input abstand">
-            <label for="Telefonnummer">Telefonnummer</label>
-            <input id="input-telefonnummer" type="text" placeholder="Telefonnummer">
-        </div>
-            <select class="betreff abstand" name="cars">
-                <option disabled selected hidden>Dein Betreff</option>
-                <option class="betreff-inhalt" value="lieferung">Fragen zur Lieferung</option>
-                <option class="betreff-inhalt" value="produkt">Fragen zum Produkt</option>
-                <option class="betreff-inhalt" value="vertrieb">Vertriebsfragen</option>
-                <option class="betreff-inhalt" value="einfach">einfach nur so!</option>
-              </select>
-        </form>
+  <body>
+    <header>{{>menue}} {{>navigation_dunkel}}</header>
+    <main id="main" class="js-closing-first">
+      <h2 class="abstand">Du hast Fragen? Schreib uns gern!</h2>
+      <!-- <form action="https://formspree.io/f/myyrpnbj" method="POST">
+      </form> -->
 
-    <div class="abstand">
-        <label for="nachricht">Deine Nachricht</label>
-        <input type="text" placeholder="Was hast du am Herzen?">
-    </div>
-    <div class="abstand">
-        <input type="checkbox">
-        <label for="datenschutz">Ich akzeptiere die Datenschutzerkärung</label>
-    </div>
-    <div class="center">
-    <button class="button-dunkel">abschicken</button>
-    </div>
+      <form class="contact-form" action="https://formspree.io/f/myyrpnbj" method="POST">
+        <div class="input-div">
+          <label class="label" for="name">Name*</label>
+          <input
+            class="input"
+            id="input-name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="input-div">
+          <label class="label" for="E-Mail">E-Mail*</label>
+          <input class="input" type="text" placeholder="E-Mail" />
+        </div>
+        <div class="input-div">
+          <label class="label" for="Telefonnummer">Telefonnummer</label>
+          <input
+            class="input"
+            id="input-telefonnummer"
+            type="text"
+            placeholder="Telefonnummer"
+          />
+        </div>
+        <select class="betreff" name="cars">
+          <option disabled selected hidden>Dein Betreff</option>
+          <div>
+            <option class="betreff-inhalt oben" value="lieferung">
+              Fragen zur Lieferung
+            </option>
+            <option class="betreff-inhalt" value="produkt">
+              Fragen zum Produkt
+            </option>
+            <option class="betreff-inhalt" value="vertrieb">
+              Vertriebsfragen
+            </option>
+            <option class="betreff-inhalt unten" value="einfach">
+              einfach nur so!
+            </option>
+          </div>
+        </select>
+        <div class="abstand">
+          <label class="label" for="nachricht">Deine Nachricht</label>
+          <textarea
+            class="nachricht"
+            placeholder="Was hast du am Herzen?"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input
+            class="input nachricht"
+            type="textarea"
+            placeholder="Was hast du am Herzen?"
+          />
+        </div>
+        <div class="abstand">
+          <input type="checkbox" />
+          <label class="datenschutz" for="datenschutz"
+            >Ich akzeptiere die Datenschutzerkärung</label
+          >
+        </div>
+        <div class="center">
+          <button type="submit" class="submit-button button-dunkel">
+            abschicken
+          </button>
+        </div>
+      </form>
     </main>
-    <footer>
-        {{>footer}}
-    </footer>
-</body>
+    <footer>{{>footer}}</footer>
+  </body>
 </html>

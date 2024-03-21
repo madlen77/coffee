@@ -1,9 +1,15 @@
+/* alle finden und noch die class abstand dazu geben */
 .text-block,
 .info-container-plant,
 .anbau,
 .info-container-cafe,
 .bauern {
   margin: auto 24px 40px;
+  /* margin-bottom: 40px; */
+}
+
+.text-bild {
+  width: calc(100% -48px);
 }
 
 .text-block{
@@ -12,7 +18,7 @@
 
   h2{
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
   }
   p {
      max-width: 55ch;
@@ -21,10 +27,10 @@
 }
 
 @media (min-width: 992px) {
-  .info-container-cafe {
+  .info-container-cafe, .text-bild {
     display: flex;
-    max-width: 100%;
-    width: 95vh;
+    /* max-width: calc(100% -96px); */
+    width: 90%;
     padding-bottom: 120px;
   }
   .text-block {
@@ -40,11 +46,21 @@
 .center{
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
 } 
 
 .abstand {
   margin-left: 23px;
   margin-right: 23px;
+
+  @media(min-width: 992px){
+  margin-left: 5%;
+  margin-right: 5%;
+
+  }
+}
+
+.flex-container{
+  display: flex;
 }

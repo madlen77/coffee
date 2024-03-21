@@ -1,24 +1,68 @@
-.input {
+.input{
+    display: block;
+    border: 3px solid black;
+    border-width: 0px 0px 3px;
+    padding: 5px;
+    font-size: 0.875rem; 
+    width: calc(100% - 10px);
+  }
+
+.label {
+    display: block;
+    font-size: 0.875rem;
+  }
+
+.input-div {
     padding: 1rem 0;
 }
 
-#input-name{
+.input:active, .input:hover{
     background-color: var(--light-grey);
 }
 
-#input-telefonnummer{
+/* #input-telefonnummer{
     color: #FF0000;
     background-color: rgba(255, 0, 0, 0.3);
-}
+} */
 
 .betreff{
+    cursor: pointer;
     border-radius: 5px;
     background-color: black;
     color: white;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 0;
 }
 
 .betreff-inhalt{
     background-color:white;
     color:  black;
-    border-radius: 0;
 }
+
+.nachricht {
+    width: calc(100% - 11px);
+    resize: none;
+}
+
+.nachricht::placeholder {
+    top: 20px;
+    left: 20px;
+}
+
+.oben{
+    border-radius: 5px 5px 0 0;
+}
+
+.unten{
+    border-radius: 0 0 5px 5px;
+}
+
+.datenschutz {
+    font-size: 0.875rem;
+}
+
+form {
+    margin: 0 24.5px;
+}
+

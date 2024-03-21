@@ -38,7 +38,7 @@ footer{
 }
 
 p{
-  max-width: 50ch;
+  /* max-width: 50ch; */
   font-size: var(--fs-400);
   line-height: var(--p-line-height);
 }
@@ -56,18 +56,4 @@ a {
 
 video {
   max-width: 86.3%;
-}
-
-label {
-  display: block;
-  font-size: 0.875rem;
-}
-
-input{
-  display: block;
-  border: 3px solid black;
-  border-width: 0px 0px 3px;
-  padding: 5px;
-  font-size: 0.875rem; 
-  width: 97% ;
 }

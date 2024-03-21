@@ -5,22 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index Page</title>
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/index.js" defer></script>
   </head>
   <body>
-    <main>
-      {{>menue}}
-      <div class="hero">
+    <header>
+       {{>menue}}
+      <section id="hero" class="js-closing-first">
         {{>navigation}}
         <h1 class="hero-title">Rustica</h1>
         <p class="hero-subtitle">Bio und Fair seit 1991</p>
-        <p class="button-dunkel"><a>zum Shop</a></p>
-      </div>
-      <div class="info">
-        {{>roesterei}}
+        <p class="button-dunkel"><a href="shop/shop.html">zum Shop</a></p>
+      </section>
+    </header>
+    <main id="main" class="js-closing-first">
+      <section class="info">
+          <div class="text-bild abstand">
+            <div>
+              <h2>Rösterei und Café</h2>
+              <p class="info-text">
+                Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen
+                Rösterei, serviert im gemütlichen Café in der Innenstadt.
+              </p>
+              <p class="info-ort">Komm vorbei!<br />Fraunhoferstr. 13, Kiel</p>
+              <p class="info-zeit">Mo – Fr 8–18 Uhr<br />Sa 11–18 Uhr</p>
+            </div>
+            <img
+              class="info-coffee"
+              src="/images/shop.png"
+              alt="das Innere eines Cafes"
+            />
+        </div>
         <div class="info-container-plant">
           <div class="info-plant-text">
             <h2>Bio und Fair</h2>
@@ -38,110 +58,9 @@
             alt="eine Kaffeepflanze"
           />
         </div>
-      </div>
-      <div class="sorten">
-        <h2 class="sorten-h2">Entdecke unsere<br />Kaffee Sorten</h2>
-        <div class="sorten-container">
-          <div class="sorten-kaffee">
-            <img
-              class="sorte-tuete"
-              src="/images/Kaffeetuete.png"
-              alt="Kaffeetüte"
-            />
-            <p class="sorten-titel">Costa Rica</p>
-            <p class="sorten-preis">6,90€-26,90€</p>
-            <img
-              class="icon bohnen"
-              src="/images/Bohnen.svg"
-              alt=""
-            />
-            <img
-              class="icon french"
-              src="/images/French_Press.svg"
-              alt=""
-            />
-            <img
-              class="icon schaufel"
-              src="/images/Schaufel.svg"
-              alt=""
-            />
-          </div>
-          <div class="sorten-kaffee">
-            <img
-              class="sorte-tuete"
-              src="/images/Kaffeetuete.png"
-              alt="Kaffeetüte"
-            />
-            <p class="sorten-titel">Äthiopien</p>
-            <p class="sorten-preis">6,90€-26,90€</p>
-            <img
-              class="icon bohnen"
-              src="/images/Bohnen.svg"
-              alt=""
-            />
-            <img
-              class="icon french"
-              src="/images/French_Press.svg"
-              alt=""
-            />
-            <img
-              class="icon schaufel"
-              src="/images/Schaufel.svg"
-              alt=""
-            />
-          </div>
-          <div class="sorten-kaffee">
-            <img
-              class="sorte-tuete"
-              src="/images/Kaffeetuete.png"
-              alt="Kaffeetüte"
-            />
-            <p class="sorten-titel">Costa Rica</p>
-            <p class="sorten-preis">6,90€-26,90€</p>
-            <img
-              class="icon bohnen"
-              src="/images/Bohnen.svg"
-              alt=""
-            />
-            <img
-              class="icon french"
-              src="/images/French_Press.svg"
-              alt=""
-            />
-            <img
-              class="icon schaufel"
-              src="/images/Schaufel.svg"
-              alt=""
-            />
-          </div>
-          <div class="sorten-kaffee">
-            <img
-              class="sorte-tuete"
-              src="/images/Kaffeetuete.png"
-              alt="Kaffeetüte"
-            />
-            <p class="sorten-titel">Äthiopien</p>
-            <p class="sorten-preis">6,90€-26,90€</p>
-            <img
-              class="icon bohnen"
-              src="/images/Bohnen.svg"
-              alt=""
-            />
-            <img
-              class="icon french"
-              src="/images/French_Press.svg"
-              alt=""
-            />
-            <img
-              class="icon schaufel"
-              src="/images/Schaufel.svg"
-              alt=""
-            />
-          </div>
-        </div>
-        <p class="button-hell"><span><a>alle Produkte</a></span></p>
-      </div>
-      <div class="herkunft">
+      </section>
+      {{>sorten}}
+      <section class="herkunft">
         <h3 class="herkunft-title">Herkunft</h3>
         <p>
           Weit hinten, hinter den Wortbergen,<br />fern der Länder Vokalien
@@ -149,8 +68,8 @@
           Und das alles in bester Bio Qualität.
         </p>
         <a>mehr</a>
-      </div>
-      <div class="inhalt">
+      </section>
+      <section class="inhalt">
         <h2>Das steckt drin</h2>
         <div class="inhalt-box">
           <img
@@ -175,10 +94,12 @@
               <img class="inhalt-pflanze" src="/images/plant.svg" alt="" />
               <p>Bio Qualität</p>
             </div>
-            <a href="/src/sub-page/shop.html" class="button-dunkel desktop">zum Shop</a>
+            <a href="/src/sub-page/shop.html" class="button-dunkel desktop"
+              >zum Shop</a
+            >
           </div>
         </div>
-      </div>
+      </section>
       {{>map}}
     </main>
     {{>footer}}

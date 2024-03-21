@@ -1,7 +1,11 @@
-import myFunction, { multiply } from "./myModule";
+function menuOpen() {
+  document.getElementById("menu").style.display = "block";
+  const closingFirst = document.querySelectorAll(".js-closing-first");
+  closingFirst.forEach((element) => (element.style.display = "none"));
+}
 
-myFunction();
-
-const result = multiply(2, 5);
-
-console.log(result);
+function menuClose() {
+  document.getElementById("menu").style.display = "none";
+  const closingFirst = document.querySelectorAll(".js-closing-first");
+  closingFirst.forEach((element) => (element.style.display = "block"));
+}

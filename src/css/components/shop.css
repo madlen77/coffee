@@ -1,0 +1,21 @@
+.product-name, .product-price{
+    color: black;
+}
+
+.product-container{
+    margin: auto 50px 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    @media(min-width:992px){
+        display: flex;
+    }
+}
+
+.product-img{
+    background-color: var(--light-grey);
+}
+
+.product-page-img{
+    background-color: var(--beige);
+}

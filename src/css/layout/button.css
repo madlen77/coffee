@@ -6,6 +6,7 @@
   border-radius: 5px;
   background-color: var(--anthrazit);
   font-size: var(--fs-400);
+  color: white;
 }
 
 .button-hell {
@@ -15,7 +16,12 @@
   border: 3px solid white;
   border-radius: 5px;
   border-radius: 5px;
-  background: linear-gradient(to left, var(--anthrazit) 50%, var(--dark-grey) 50%) right;
+  background: linear-gradient(
+      to left,
+      var(--anthrazit) 50%,
+      var(--dark-grey) 50%
+    )
+    right;
   /* background-size: 200% 100%; */
   /* background-color: var(--anthrazit); */
   background-size: 300% 100%;
@@ -23,7 +29,7 @@
   transition: background 2s ease-out;
 }
 
-.button-hell:hover{
+.button-hell:hover {
   background-position: left;
   /* background-color: var(--dark-grey); */
 }
@@ -40,13 +46,24 @@
   top: 0;
 } */
 
-.button-dunkel:active, .button-hell:active span{
+.button-dunkel:active,
+.button-hell:active span {
   width: 1;
-} 
+}
 
 .desktop {
   display: none;
   @media (min-width: 992px) {
     display: block;
+  }
+}
+
+.button-cart {
+  color: white;
+  background-color: black;
+  padding: 0;
+  border: none;
+  h3 {
+    margin-top: 0;
   }
 }

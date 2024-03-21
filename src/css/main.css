@@ -1,17 +1,25 @@
 @import "variables.css";
 @import "base.css";
-@import "components/hero.css";
-@import "components/info.css";
+
+@import "components/index/info.css";
 @import "components/index/sorten.css";
-@import "components/footer.css";
-@import "components/inhalt.css";
-@import "components/menue.css";
+@import "components/index/inhalt.css";
 @import "components/index/herkunft.css";
-@import "components/map.css";
+
+@import "components/repeating/footer.css";
+@import "components/repeating/hero.css";
+@import "components/repeating/map.css";
+@import "components/repeating/menue.css";
+
 @import "components/herkunft/anbau.css";
 @import "components/herkunft/bauern.css";
+
 @import "components/kontakt.css";
-@import "layout/button.css";
+@import "components/impressum.css";
+@import "components/shop.css";
+
 @import "components/cafe/galerie.css";
+
+@import "layout/button.css";
 @import "layout/block.css";
-@import "layout/hero.css";
+@import "components/repeating/navigation.css";
